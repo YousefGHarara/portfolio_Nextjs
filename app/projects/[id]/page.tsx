@@ -1,17 +1,11 @@
 
-type Params = {
-  id: string;
+type Params = Promise<{ id: string }>
+
+export default async function Page (props: { params: Params }) {
+
+  const params = await props.params;
+  const id = params.id;
+
+
+  return <div>Hi, {id}</div>;
 };
-
-interface PageProps {
-  params: Params;
-}
-
-const Page = ({ params } : PageProps) => {
-  return <div>Hi, {params.id}</div>;
-};
-
-export default Page;
-
-// ✅ هذا يجعل Next.js يتوقف عن محاولة التحقق من static params
-export const dynamic = 'force-dynamic';
