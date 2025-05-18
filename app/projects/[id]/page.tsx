@@ -1,20 +1,17 @@
-import React from 'react';
 
-// type PageProps = {
-//     params: {id: string}
-// }
+type Params = {
+  id: string;
+};
 
-const Page = () => {
-
-    return (
-        <div>
-            {/* Hi, {params.id} */}
-        </div>
-    );
+interface PageProps {
+  params: Params;
 }
+
+const Page = ({ params } : PageProps) => {
+  return <div>Hi, {params.id}</div>;
+};
 
 export default Page;
 
-
-// ✅ إضافة هذا السطر لحل الخطأ
-// export const dynamic = 'force-dynamic';
+// ✅ هذا يجعل Next.js يتوقف عن محاولة التحقق من static params
+export const dynamic = 'force-dynamic';
