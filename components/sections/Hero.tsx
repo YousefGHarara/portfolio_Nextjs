@@ -62,9 +62,9 @@ const Hero = () => {
       <div className="lg:absolute p-[1rem] flex flex-col gap-4 max-w-lg  lg:right-[10%] lg:top-[50%] bg-white shadow-lg border border-zinc-300 rounded-xl dark:bg-zinc-800 dark:border-zinc-600 ">
         <h2 className="text-xl">My Bio</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          architecto ullam saepe dolor consectetur? Accusantium esse harum
-          itaque sed, id quam quae.
+          My name is Yousef Harara, a Frontend and Software Developer with a
+          strong passion for creating modern, interactive, and user-focused web
+          experiences.
         </p>
       </div>
 
