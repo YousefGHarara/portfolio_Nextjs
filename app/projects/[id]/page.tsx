@@ -1,19 +1,20 @@
 import React from 'react';
 
-type Params = {
-    params: {id: string}
-}
+// type PageProps = {
+//     params: {id: string}
+// }
 
-const Page = ({params} : Params) => {
-
-    const {id} = params;
-    
+const Page = () => {
 
     return (
         <div>
-            Hi, {id}
+            {/* Hi, {params.id} */}
         </div>
     );
 }
 
 export default Page;
+
+
+// ✅ إضافة هذا السطر لحل الخطأ
+// export const dynamic = 'force-dynamic';
